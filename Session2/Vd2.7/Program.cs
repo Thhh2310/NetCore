@@ -12,7 +12,7 @@
             {
                 for (int j = i; j <= 10; j++)
                 {
-                    Console.Write("");
+                    Console.Write(" ");
                 }
                 for (int j = 1; j <= i; j++)
                 {
