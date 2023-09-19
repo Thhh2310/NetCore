@@ -1,0 +1,15 @@
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\bin\Debug\net6.0\Vd2.6.exe
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\bin\Debug\net6.0\Vd2.6.deps.json
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\bin\Debug\net6.0\Vd2.6.runtimeconfig.json
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\bin\Debug\net6.0\Vd2.6.dll
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\bin\Debug\net6.0\Vd2.6.pdb
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.csproj.AssemblyReference.cache
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.GeneratedMSBuildEditorConfig.editorconfig
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.AssemblyInfoInputs.cache
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.AssemblyInfo.cs
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.csproj.CoreCompileInputs.cache
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.dll
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\refint\Vd2.6.dll
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.pdb
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\Vd2.6.genruntimeconfig.cache
+D:\TTCD_đồ án\NetCore\Session2\Vd2.6\obj\Debug\net6.0\ref\Vd2.6.dll

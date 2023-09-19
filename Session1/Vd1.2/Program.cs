@@ -19,7 +19,7 @@
             //Hiển thị thông tin giá trị
             Console.WriteLine("Ma nhan vien: "+ id);
             Console.WriteLine("Ho va ten nhan vien: "+ name);
-            Console.WriteLine("Ngay sinh: "+ dateBirth.ToString("dd-MM-yyyy"));
+            Console.WriteLine("Ngay sinh: " + dateBirth.ToString("dd-MM-yyyy")) ;
             Console.WriteLine("Đia chi: "+ address);
             Console.WriteLine("Đien thoai: "+ phone);
             Console.WriteLine("Email: "+ email);
