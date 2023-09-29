@@ -1,0 +1,15 @@
+D:\TTCD_đồ án\NetCore\Session8\ex8\bin\Debug\net6.0\ex8.exe
+D:\TTCD_đồ án\NetCore\Session8\ex8\bin\Debug\net6.0\ex8.deps.json
+D:\TTCD_đồ án\NetCore\Session8\ex8\bin\Debug\net6.0\ex8.runtimeconfig.json
+D:\TTCD_đồ án\NetCore\Session8\ex8\bin\Debug\net6.0\ex8.dll
+D:\TTCD_đồ án\NetCore\Session8\ex8\bin\Debug\net6.0\ex8.pdb
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.csproj.AssemblyReference.cache
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.GeneratedMSBuildEditorConfig.editorconfig
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.AssemblyInfoInputs.cache
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.AssemblyInfo.cs
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.csproj.CoreCompileInputs.cache
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.dll
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\refint\ex8.dll
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.pdb
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ex8.genruntimeconfig.cache
+D:\TTCD_đồ án\NetCore\Session8\ex8\obj\Debug\net6.0\ref\ex8.dll
