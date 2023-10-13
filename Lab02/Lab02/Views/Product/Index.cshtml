@@ -1,0 +1,128 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+    var products = ViewBag.products;
+}
+<div class="container d-flex">
+<div class="col-md-3">
+    <h3>DANH MỤC</h3>
+    <div class="table">
+        <ul>
+            <li>Quần áo</li>
+            <li>Túi xách</li>
+            <li>Đồng hồ</li>
+            <li>Ti vi</li>
+            <li>Tủ lạnh</li>
+            <li>Máy bơm</li>
+            <li>Quạt điện</li>
+            <li>Lò sưởi</li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <h3>Danh sách sản phẩm</h3>
+    @foreach (var item in products)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="@item.Image" alt="" />
+                <div class="caption">
+                    <h3>@item.Name</h3>
+                    <p>
+                        @item.Description
+                    </p>
+                    <p>
+                        <a asp-route="detail" asp-route-id="@item.Id" class="btn btn-success">Chi tiết</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+    <!--<div class="col-md-3">
+        <div class="thumbnail">
+            <img src="~/Avatar/01.png" alt="" />
+            <div class="caption">
+                <h3>Avatar name</h3>
+                <p>
+                    Lorem ispum dolor sit amet cónectetur adipisicing elit. Vel, magni?
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success">Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <img src="~/Avatar/02.png" alt="" />
+            <div class="caption">
+                <h3>Avatar name</h3>
+                <p>
+                    Lorem ispum dolor sit amet cónectetur adipisicing elit. Vel, magni?
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success btn-block">Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <img src="~/Avatar/03.png" alt="" />
+            <div class="caption">
+                <h3>Avatar name</h3>
+                <p>
+                    Lorem ispum dolor sit amet cónectetur adipisicing elit. Vel, magni?
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success btn-block">Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <img src="~/Avatar/04.png" alt="" />
+            <div class="caption">
+                <h3>Avatar name</h3>
+                <p>
+                    Lorem ispum dolor sit amet cónectetur adipisicing elit. Vel, magni?
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success btn-block">Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <img src="~/Avatar/05.png" alt="" />
+            <div class="caption">
+                <h3>Avatar name</h3>
+                <p>
+                    Lorem ispum dolor sit amet cónectetur adipisicing elit. Vel, magni?
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success btn-block">Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="thumbnail">
+            <img src="~/Avatar/01.png" alt="" />
+            <div class="caption">
+                <h3>Avatar name</h3>
+                <p>
+                    Lorem ispum dolor sit amet cónectetur adipisicing elit. Vel, magni?
+                </p>
+                <p>
+                    <a href="#" class="btn btn-success btn-block">Chi tiết</a>
+                </p>
+            </div>
+        </div>
+    </div>-->
+</div>
+</div>
