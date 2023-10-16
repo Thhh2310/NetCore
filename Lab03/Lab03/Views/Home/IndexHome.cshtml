@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Home Index";
+}
+<partial name="Banner" />
+<hr />
+<!--Nút bấm-->
+<button id="loadAjax" class="btn btn-sm btn-primary">Click load book từ partialResult</button>
+<hr />
+<!--nội dung sẽ đc load từ partial view vào đây-->
+<div id="data-from-ajax" class="row">Loading data...</div>
+<hr />
+<div class="row">
+    <div><img src="/images/mt1.jpg" alt="" /></div>
+    <div><img src="/images/mt2.jpg" alt="" /></div>
+    <div><img src="/images/mt3.jpg" alt="" /></div>
+    <div><img src="/images/mt4.jpg" alt="" /></div>
+</div>
+
+@section Scripts {
+    <script>
+        //gọi sự kiện click vào nút bấm có id ="loadAjax"
+        $("#loadAjax").click(function(){
+            //thông qua ajax load nội dung từ partial view vào id ="data-from-ajax"
+            $("#data-from-ajax").load("/Book/PopularBook");
+        })
+    </script>
+}
