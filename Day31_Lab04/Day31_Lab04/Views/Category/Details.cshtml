@@ -1,0 +1,82 @@
+﻿@model Day31_Lab04.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details Category - @Model.Id</h1>
+<div class="alert alert-danger">@Model.Name</div>
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="input-group mb-3">
+            <label asp-for="Id" class="input-group-text">Id</label>
+            <input asp-for="Id" class="form-control" readonly />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Name" class="input-group-text">Name</label>
+            <input asp-for="Name" class="form-control" readonly />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="CreateDate" class="input-group-text">CreateDate</label>
+            <input asp-for="CreateDate" class="form-control" readonly />
+            <span asp-validation-for="CreateDate" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="CreateBy" class="input-group-text">CreateBy</label>
+            <input asp-for="CreateBy" class="form-control" readonly />
+            <span asp-validation-for="CreateBy" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Status" class="input-group-text">Status</label>
+            <input asp-for="Status" class="form-control" readonly />
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+    </div>
+
+@*    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+    </dl>*@
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new {@class="btn btn-secondary"}) 
+
+    <a href="/category/edit/@Model.Id" class="btn btn-dark">Sửa</a>
+
+    <a asp-action="edit" asp-controller="Category" asp-route-id="@Model.Id" class="btn btn-success">Sửa</a>
+
+    <a asp-action="Index" class="btn btn-danger">Back to List</a>
+</div>

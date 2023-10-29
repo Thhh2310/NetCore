@@ -1,0 +1,129 @@
+﻿@model Day31_Lab04.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details Product</h1>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="input-group mb-3">
+            <label asp-for="Id" class="input-group-text">Id</label>
+            <input asp-for="Id" class="form-control" readonly />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Name" class="input-group-text">Name</label>
+            <input asp-for="Name" class="form-control" readonly />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Description" class="input-group-text">Description</label>
+            <input asp-for="Description" class="form-control" readonly />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Price" class="input-group-text">Price</label>
+            <input asp-for="Price" class="form-control" readonly />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="SalePrice" class="input-group-text">SalePrice</label>
+            <input asp-for="SalePrice" class="form-control" readonly />
+            <span asp-validation-for="SalePrice" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="Image" class="input-group-text">Image</label>
+            <img src="@Model.Image" alt="@Model.Name" style="width:10rem" />
+            <input asp-for="Image" class="form-control" readonly />
+            <span asp-validation-for="Image" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3">
+            <label asp-for="CategoryId" class="input-group-text">CategoryId</label>
+            @*<input asp-for="CategoryId" class="form-control" readonly />*@
+            <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.CategoryId" readonly></select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <div class="input-group mb-3 ">
+            <label asp-for="Status" class="control-label pe-2"></label>
+            <input type="radio" asp-for="Status" id="Show" value="true" readonly />
+            <label for="Show" class="pe-2">Show</label>
+            <input type="radio" asp-for="Status" id="Hide" value="false" readonly />
+            <label for="Hide">Hide</label>
+        </div>
+    </div>
+
+@*    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SalePrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SalePrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+    </dl>*@
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new {@class="btn btn-secondary"}) 
+
+    <a href="/product/edit/@Model.Id" class="btn btn-dark">Sửa</a>
+
+    <a asp-action="edit" asp-controller="Product" asp-route-id="@Model.Id" class="btn btn-success">Sửa</a>
+
+    <a asp-action="Index" class="btn btn-danger">Back to List</a>
+</div>
