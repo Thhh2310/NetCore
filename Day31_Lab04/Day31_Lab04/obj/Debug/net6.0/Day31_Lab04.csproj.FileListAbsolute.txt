@@ -223,3 +223,6 @@ D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\bin\Debug\net6.0\runtimes\win\
 D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\obj\Debug\net6.0\Day31_Lab04.csproj.CopyComplete
+D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\bin\Debug\net6.0\xunit.abstractions.dll
+D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\bin\Debug\net6.0\xunit.core.dll
+D:\TTCD_đồ án\NetCore\Day31_Lab04\Day31_Lab04\bin\Debug\net6.0\xunit.execution.dotnet.dll
